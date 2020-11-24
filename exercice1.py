@@ -1,5 +1,5 @@
 def bissextile(annee):
-    if ((anne % 100 != 0) and (annee % 4 == 0)):
+    if (annee % 100 != 0 and annee % 4 == 0):
         return True
     elif (annee % 400 == 0):
         return True
@@ -15,11 +15,11 @@ def nombrejours(mois, annee):
         return 30
     if (mois == 2):
         if (bissextile(annee) == True):
-            return 28
-        else:
             return 29
+        else:
+            return 28
     else:
-        print ("l'année n'est pas valide")
+        print ("l'année ou le mois n'est pas valide")
 
 
 def isValide(date):
